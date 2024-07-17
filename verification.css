@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+#verification-container {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+#verification-container h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.verification {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 2rem;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-1, .grid-2 {
+    display: grid;
+}
+
+.grid-1 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-2 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.icon-container {
+    text-align: center;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.icon-container i:hover {
+    cursor: pointer;
+    color: #191970;
+}
+
+.icon-container .title-verification {
+    font-size: 0;
+    transition: font-size 0.3s ease, transform 0.3s ease;
+    font-weight: 700;
+    color: black;
+    margin-top: 10px;
+}
+
+.icon-container:hover .title-verification {
+    font-size: 18px;
+    transform: scale(1.2);
+}
+
+.icon-container i {
+    color: #B8860B;
+    font-size: 60px;
+    transition: transform 0.3s ease;
+}
+
+.icon-container:hover i {
+    transform: scale(1.2);
+}

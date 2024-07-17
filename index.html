@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Stop-Feu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="verification.css">
+    <link rel="stylesheet" href="formation.css">
+    <link rel="stylesheet" href="card.css">
+    <script src="https://kit.fontawesome.com/76e9b7325c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="banner-container">
+        <img src="images/logo.png" alt="Logo ABC Stop-Feu" class="logo-container">
+    </div>
+
+    <div class="container">
+
+        <div class="presentation">
+            <h1>MISE EN CONFORMITE <br>& VERIFICATION </h1>
+            <h2><br> des moyens de secours incendie <br> En Ile-De-France</h2> 
+            <p>Intervention sur site tertiaire, industriel, ERP ...</p>   
+            <p>créée en 2010, par Mr.Diez. Avec une expérience de 22ans <br>dans la sécurité incendie</p>
+            <button class="btn" id="openModalBtn">Une question, un devis ? </button>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span id="closeModalBtn" class="closebtn">&times;</span>
+                <div id="title-modal">
+                    <h3 id="title-modal-container">UN PROJET, UNE QUESTION ?</h3>
+                </div>
+                <h2>Un Besoin ?</h2>
+                <form action="" id="devisForm">
+                    <div class="form-group">
+                        <label for="Ville">Ville : </label>
+                        <input type="text" id="ville" name="ville" required>
+
+                        <label for="Code postal">Code postal :</label>
+                        <input type="text" id="code-postal" name="code-postal" required>
+                    
+
+                    
+                        <label for="surface">Surface (m²) :</label>
+                        <input type="number" id="surface" name="surface" required>
+                   
+
+                    
+                        <label for="telephone">Téléphone :</label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                  
+                    
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <h2>Précision utiles</h2>
+                    
+                    <div class="form-group">
+                        <label for="commentaire">Information utiles :</label>
+                        <textarea id="commentaire" name="commentaire"></textarea>
+                    </div>
+                    <button type="submit" id="btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="verif-form-container">
+        <div id="verification-container">
+            <h1>Vérification annuelle et Mise en conformité de vos locaux</h1>
+            <h1>Formation des personnels sur la sécurité incendie</h1>
+            <div class="verification">
+                <div class="grid-1">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-fire-extinguisher"></i>
+                        <p class="title-verification">Extincteur</p>
+                    </div>
+                    <div class="icon-container">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <p class="title-verification">Eclairage de secours <br><span class="type">BAES/BAEH</span></p>
+                    </div>
+                    <div class="icon-container">
+                        <i class="fa-solid fa-cloud"></i>
+                        <p class="title-verification">Système de désenfumage</p>
+                    </div>
+                    <div class="icon-container">
+                        <i class="fa-solid fa-building"></i>
+                        <p class="title-verification">Colonne incendie</p>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-droplet"></i>
+                        <p class="title-verification">Robinet</p>
+                    </div>
+                    <div class="icon-container">
+                        <i class="fa-solid fa-person-dots-from-line"></i>
+                        <p class="title-verification">Audit & formation incendie</p>
+                    </div>
+                    <div class="icon-container">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <p class="title-verification">Plan d'évacuation et d'intervention</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="title-cards">
+        <h1>Garantissez votre sécurité incendie.</h1>
+    <p>Simple, Efficace et Fiable</p>
+    </div>
+
+    <div id="card-container" class="card-background">
+
+        <div class="cards">
+            <h2>1 - INFORMATIONS</h2>
+            <p>Informations utiles pour un devis</p>
+            <p>Par nature des lieux (tertiaire, industriel, ERP) Superficie au sol, nombre d'étages</p>
+        </div>
+
+        <div class="cards">
+            <h2>2 - VISITE</h2>
+            <p>Envoie d'un devis détaillé</p>
+            <p>48h maximum après la visite</p>
+        </div>
+
+        <div class="cards">
+            <h2>3 - PRESTATION</h2>
+            <p>Réception du devis signé</p>
+            <p>réalisation de la prestation dans les plus bref délais.</p>
+        </div>
+
+        <div class="cards">
+            <h2>4 - RAPPORT</h2>
+            <p>Rédaction d'un rapport</p>
+            <p>Liste observations et d'actions</p>
+        </div>
+
+        <div class="cards">
+            <h2>5 - PLANING</h2>
+            <p>ABC STOP FEU - EI Monsieur Diez Hougo s'occupe de vos vérifications annuelles</p>
+        </div>
+
+        <div class="cards">
+            <h2>6 - FACTURE</h2>
+            <p>Conforme au devis</p>
+            <p>Nous assurons vos obligations en toute transparence</p>
+        </div>
+    </div>
+
+    <script src="card.js"></script>
+    <script src="carousselVerif.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

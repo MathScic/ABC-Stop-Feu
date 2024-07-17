@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Banner */
+.banner-container {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    width: auto;
+    text-align: center;
+    background: url("images/Banner.png"); 
+    background-position: center;
+    background-size: cover;
+    object-fit: cover; 
+    height: 50vh;
+}
+
+.logo-container {
+    max-width: 400px;
+    height: auto;
+}
+
+.container {
+    position: relative; /* Position relative pour contenir la modal */
+    text-align: center;
+}
+
+/* Présentation  */
+.presentation {
+    width: auto; /* Largeur de la présentation */
+    padding: 30px;
+    font-family: 'Roboto', sans serif;
+    background-color: #E6E6FA;
+}
+
+.presentation h1 {
+    color: #87CEFA;
+    margin-bottom: 0;
+}
+
+.presentation h2 {
+    color: #00008B;
+    margin-top: 0;
+}
+
+#openModalBtn {
+    padding: 5px;
+    border: 1px transparent;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+#openModalBtn:hover {
+    cursor: pointer;
+    text-decoration: underline #00008B;
+}
+
+/* Modal */
+
+#title-modal{
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #FFD700;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid lightgray;
+}
+
+#title-modal-container {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #FFD700;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    margin-right: 1rem;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond gris semi-transparent */
+    display: none; /* Par défaut, la modal est cachée */
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Assure que la modal est au-dessus de tout */
+}
+
+.modal h2 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2rem;
+    padding: 0;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+#devisForm {
+    font-family: 'Robotp', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#devisForm #btn {
+    width: 15%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: transparent;
+    background-color: #008000;
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#devisForm #btn:hover {
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: #A9A9A9;
+    padding: 40px;
+    width: 70%;
+    max-height: 80%;
+    overflow-y: auto;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#ville, #code-postal, #surface, #telephone,#email, #commentaire {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: transparent;
+    width: 200px;
+}
+
+#ville {
+    margin-right: 2rem;
+}
+
+#commentaire {
+    width: 700px;
+    height: 300px;
+    margin-top: 1rem;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-group #commentaire {
+    display: flex;
+    align-items: center;
+    width: 700px;
+}
+
+.modal.show {
+    display: flex; /* Affiche la modal lorsque la classe .show est présente */
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: red;
+    font-weight: 700;
+}
+
+.verif-form-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    display: flex;
+
+}
+
+@media (max-width: 768px) {
+    .banner-container {
+        height: 30vh;
+        width: auto;
+    }
+    #devisForm #btn {
+        width: 30%;
+    }
+    #commentaire {
+        height: 150px;
+       max-width: 500px ;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #devisForm {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo-container {
+        max-width: 400px;
+        height: 35vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-container {
+        height: 20vh;
+        width: auto;
+    }
+
+    .presentation {
+        width: auto;
+    }
+
+    .modal-content {
+        width: 80%;
+        margin-right: 2.5rem;
+    }
+    #devisForm #btn {
+        width: 50%;
+    }
+    #commentaire {
+        height: 100px;
+        max-width: 350px;
+    }
+
+    #title-modal-container {
+        font-size: 25px;
+    }
+
+    .logo-container {
+        max-width: 400px;
+        height: 25vh;
+    }
+}
+
+
+
+

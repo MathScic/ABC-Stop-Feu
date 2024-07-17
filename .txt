@@ -1,0 +1,8 @@
+.banner-container {
+    width: 100%;
+    text-align: center;
+    background: url("images/Banner.png"); 
+    background-position: center;
+    background-size: cover;
+    object-fit: cover; 
+}
